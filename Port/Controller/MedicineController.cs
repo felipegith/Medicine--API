@@ -52,7 +52,7 @@ namespace Port.Controller
             return Ok(findId);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut]
         public IActionResult Update([FromBody] Medicine medicine)
         {
             if (!ModelState.IsValid)
